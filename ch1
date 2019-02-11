@@ -1,1 +1,22 @@
+/**********************************************************************
+*
+* Function: main()
+*
+* Description: Blink the green LED once a second.
+*
+* Notes: This outer loop is hardware-independent. However,
+* it depends on two hardware-dependent functions.
+*
+* Returns: This routine contains an infinite loop.
+*
+**********************************************************************/
+void
+main(void)
+{
+while (1)
+{
+toggleLed(LED_GREEN); /* Change the state of the LED. */
+delay(500); /* Pause for 500 milliseconds. */
+}
 
+} /* main() */
